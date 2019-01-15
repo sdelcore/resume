@@ -1,0 +1,152 @@
+% Sample Resume (sample.tex)
+% github.com/stackptr/resume-tex
+
+% Use resume.cls style
+\documentclass{resume}
+\usepackage{hyperref}
+%------------------------------------------------------------------------------
+%	Header
+%------------------------------------------------------------------------------
+
+% Name and contact information
+\name{Spencer Delcore}
+\coop{Computer Engineering - University of Waterloo}
+\contact{261-130 Columbia Street West \\ Waterloo ON, N2L 0G6}
+\contact{(416) 453~$\cdot$~2755 \\ sdelcore@uwaterloo.ca \\ \href{http://sdelcore.github.io}{sdelcore.github.io}}
+\begin{document}
+
+%----------------------------------------------------
+%	Skills section
+%----------------------------------------------------
+
+\begin{rSection}{Qualifications}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% ---------------------------------------------------
+%	Languages subsection
+% ---------------------------------------------------
+Languages & 
+    C++, Python, C, C\#, VHDL/Verilog, MATLAB, PHP, JavaScript\\
+% ---------------------------------------------------
+%	Technologies subsection
+% ---------------------------------------------------
+Frameworks/Technologies & 
+     Azure IoT Edge, Qt, Git, Unity, AWS, SQL, Yocto, Buildroot\\
+
+Embedded Experience &
+	 QNX, UNIX, Arduino, Raspberry Pi, Avnet MiniZed, Renasas R-Car-H3
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------
+%	Projects Section
+%----------------------------------------------------
+\begin{rSection}{Work Experience}
+%Molex
+\begin{rSubsection}{Molex. -\em{ Co-op Developer}}
+{Sept. 2018 - Dec. 2018}{Waterloo, ON}{ }
+\item Responsible for evaluating QNX Hypervisor on an Intel NUC and Renasas R-Car-H3 
+\item Built various Linux images using both Yocto and Buildroot, along with sample programs in C
+\item Developed an Edge Gateway for PROFINET enabled devices using Azure IoT Edge
+\item Designed a Human Machine Interface (HMI) connected to an OPC Server
+\end{rSubsection}
+%Evertz
+\begin{rSubsection}{Evertz Microsystems Ltd. -\em{ Embedded Systems Design Engineering, Co-op}}
+{Sept. 2017 - Dec. 2017}{Burlington, ON}{ }
+\item Developed a multi-threaded framework for generating embedded user interfaces using Qt and QML
+\item Implemented an embedded SQLite database, and configured it for performance
+\item Communicated through a defined protocol with various systems via D-Bus 
+\item Parsed multiple JSON structures to generate various user interfaces
+\end{rSubsection}
+% CSC
+\begin{rSubsection}{Cognitive Systems Corp. -\em{ Augmented Reality (AR) Developer, Co-op}}
+{Jan. 2017 - April. 2017}{Quantum Valley Investments, Waterloo, ON}{ }
+\item Responsible for creating an AR demonstration to visualize wireless signals using a Microsoft HoloLens
+\item Dynamically generated interactive holograms using Unity and C\#
+\item Created a Python program that interfaces with Cognitive's system on a chip (SoC) to detect wireless signals
+\item Implemented websockets to communicate between the SoC and the HoloLens
+\end{rSubsection}
+
+% INGLE
+\begin{rSubsection}{Ingle International Inc. -\em{ Software Engineering, Co-op}}
+{May. 2016 - Aug. 2016}{Toronto, ON}{ }
+\item Accountable for building and maintaining version two of their API using PHP and the Laravel framework
+\item Built a dynamically themed Android application using Java and React Native
+\item Researched, presented, and participated in critical development meetings
+\end{rSubsection}
+
+% VIZIYA
+\begin{rSubsection}{VIZIYA -\em{ Software Developer, Co-op}}
+{Sept. 2015 - Dec. 2015}{Waterdown, ON}{ }
+\item Designed and developed quality ASP.NET and C\# applications
+\item Preformed SQL queries to retrieve and manipulate data from Oracle and SAP databases
+\item Generated user guides, training manuals, and documentation
+\end{rSubsection}
+
+% ESIG
+\begin{rSubsection}{Emerging Star Investment Group -\em{ Software Developer, Co-op}}
+{Jan. 2015 - April 2015}{Accelerator Centre, Waterloo, ON}{ }
+\item Developed financial web-based software using PHP and the Laravel framework
+\item Created and maintained an Amazon Web Services (AWS) EC2 server to host the company website
+\item Built scripts to scrape and store financial related data using Python
+\end{rSubsection}
+
+\end{rSection}
+
+\pagebreak  
+\vspace*{20px}
+%----------------------------------------------------
+%	Projects Section
+%----------------------------------------------------
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{MIPS Processor -\em{ Verilog}}
+{2018}{}{}
+\item Designed and implemented a cycle-accurate MIPS processor architecture in Verilog
+\item Constructed each stage of the 5-stage pipelined design using the synthesizable subset of verilog at the register-transfer level (RTL)
+\item Made use of testbenches and debugging strategies to ensure correctness and completeness
+\end{rSubsection}
+
+\begin{rSubsection}{VHDL Compiler -\em{ Java, VHDL}}
+{2017}{}{}
+\item Created a VHDL synthesizer and simulator using Java
+\item Uses VHDL (combinational circuits only) as the input language and produces circuit diagrams and simulations
+\item Gathered important compiler concepts such as regular languages, regex, DFA, lexing, recursive decent parsing, and context-free grammars
+\end{rSubsection}
+
+\begin{rSubsection}{Room Sensors -\em{ C++, Python, Bash, JavaScript}}
+{2017}{}{}
+\item Plots information stored in a database containing data from Arduino sensors
+\item Communicate and store sensor data from an Arduino to a Raspberry Pi using a created serial protocol
+\item Chart data from JSON reports received from a Raspberry Pi through websockets
+\item Created an install script that sets up the websocket, web page, cron job, Arduino, and MySQL database
+\end{rSubsection}
+
+\begin{rSubsection}{DAC Audio Player -\em{ Altera FPGA, C}}
+{2016}{}{}
+\item Implemented a 16-bit sampling stereo digital to analog audio player with push buttons to control playback
+\item Gained experience with Altera audio IP core, audio sampling and buffering, and interrupts
+\item Made use of the FatFS CLI to mount and interpret WAV files from a microSD card
+\end{rSubsection}
+
+\end{rSection}
+
+%------------------------------------------------------------------------------
+%	Education section
+%------------------------------------------------------------------------------
+
+%\begin{rSection}{Education}
+
+%{\bf University of Waterloo, Waterloo, Ontario} \hfill {2014 - Present} \\
+%Candidate for Bachelor of Applied Science, Computer Engineering, Honours, Co-op
+
+%{\bf Carleton University, Ottawa, Ontario} \hfill {2013 - 2014} \\
+%Candidate for Bachelor of Applied Science, Computer Engineering \\
+%\textit{Computer Engineering GPA:} $10.9/12$
+
+%\end{rSection}
+
+
+\end{document}
